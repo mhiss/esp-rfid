@@ -189,7 +189,7 @@ void ICACHE_RAM_ATTR loop()
 	{
 		writeLatest(" ", "Button", 1);
 		mqttPublishAccess(epoch, "true", "Always", "Button", " ", " ");
-		activateRelay[0] = true;
+		activateRelay[1] = true;
 		beeperValidAccess();
 		// TODO: handle other relays
 	}
